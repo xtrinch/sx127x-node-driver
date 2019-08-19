@@ -32,15 +32,11 @@ npm install sx127x-node-driver
 
 ## API
 
-### Import Library
+### Initialize
 
 ```js
 var SX127x = require('sx127x');
-```
 
-### Create device
-
-```js
 var options = {
   // ...
 };
