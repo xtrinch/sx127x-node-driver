@@ -1,5 +1,5 @@
 {
-  "name": "sx127x-node-driver",
+  "name": "node-sx127x-driver",
   "version": "0.0.1",
   "description": "Node.js driver for Semtech SX1276/77/78/79 LoRa circuits",
   "main": "index.js",

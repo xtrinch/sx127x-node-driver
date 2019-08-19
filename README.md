@@ -1,4 +1,4 @@
-# sx127x-node-driver
+# node-sx127x-driver
 
 Node.js driver for [Semtech SX1276/77/78/79](http://www.semtech.com/apps/product.php?pn=SX1276) based LoRa radios.
 
@@ -35,7 +35,7 @@ npm install sx127x-node-driver
 ### Initialize
 
 ```js
-var SX127x = require('sx127x-node-driver');
+var SX127x = require('node-sx127x-driver');
 
 var options = {
   // ...
