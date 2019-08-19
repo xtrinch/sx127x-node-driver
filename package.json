@@ -1,14 +1,14 @@
 {
-  "name": "sx127x",
-  "version": "0.0.0",
-  "description": "Node.js driver for Semtech SX1276/77/78/79 based LoRa radios",
+  "name": "sx127x-node-driver",
+  "version": "0.0.1",
+  "description": "Node.js driver for Semtech SX1276/77/78/79 LoRa circuits",
   "main": "index.js",
   "scripts": {
     "test": "jshint *.js lib/. examples/."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sandeepmistry/node-sx127x.git"
+    "url": "git+https://github.com/xtrinch/xtrinch.git"
   },
   "keywords": [
     "Semtech",
@@ -18,14 +18,13 @@
     "SX1279",
     "LoRa"
   ],
-  "author": "Sandeep Mistry <sandeep.mistry@gmail.com>",
+  "author": "Mojca Rojko <mojca.rojko@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sandeepmistry/node-sx127x/issues"
+    "url": "https://github.com/xtrinch/sx127x-node-driver/issues"
   },
-  "homepage": "https://github.com/sandeepmistry/node-sx127x#readme",
+  "homepage": "https://github.com/xtrinch/sx127x-node-driver#readme",
   "dependencies": {
-    "async": "^2.1.2",
     "onoff": "^4.0.0",
     "spi-device": "^2.0.8"
   },
