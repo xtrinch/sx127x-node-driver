@@ -56,8 +56,8 @@ Supported options:
 | `spiDevice` | `0` | SPI chip select/enable to use |
 | `resetPin` | `24` | GPIO pin number of reset pin |
 | `dio0Pin` | `25` | GPIO pin number of DIO0 pin |
-| `frequency` | `915e6` | Frequency of radio in Hz, see [setFrequency](#frequency) for supported values |
-| `spreadingFactor` | `7` | Spreading factor of radio, see [setSpreadingFactor](#spreading-factor) for supported values  |
+| `frequency` | `915e6` | Frequency of radio in Hz, see [setFrequency](#frequency) for supported values (make sure your chip supports the frequency you chose) |
+| `spreadingFactor` | `7` | Spreading factor of radio, see [setSpreadingFactor](#spreading-factor) for supported values (spreading factors are orthogonal, so make sure they match when trying to communicate from one chip to another)  |
 | `signalBandwidth` | `125E3` | Signal bandwidth of radio in Hz, see [setSignalBandwidth](#signal-bandwidth) for supported values  |
 | `codingRate` | `4 / 5` | Coding rate of radio, see [setCodingRate](#coding-rate) for supported values |
 | `preambleLength` | `8` | Preamble length of radio, see [setPreambleLength](#preamble-length) for supported values |
