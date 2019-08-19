@@ -121,6 +121,20 @@ try {
 }
 ```
 
+### Interrupt receive
+```js
+try {
+   await sx127x.open();
+   await sx127x.setContinuousReceiveMode();
+} catch(err) {
+   console.log(err)
+}
+
+sx127x.on('data', function(data, rssi, snr) {
+   console.log('data: ' +  data.toString() + ", rssi: " + rssi);
+});
+```
+
 ### Sleep mode
 
 Put the radio in sleep mode.
