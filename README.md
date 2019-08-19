@@ -35,7 +35,7 @@ npm install sx127x-node-driver
 ### Initialize
 
 ```js
-var SX127x = require('sx127x');
+var SX127x = require('sx127x-node-driver');
 
 var options = {
   // ...
