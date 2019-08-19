@@ -31,10 +31,15 @@ async function readTemperature() {
 
 readTemperature();
 
-process.on('SIGINT', function() {
+process.on('SIGINT', async function() {
   // close the device
-  sx127x.close(function(err) {
-    console.log('close', err ? err : 'success');
-    process.exit();
-  });
+  try {
+	  await sx127x.close();
+  } catch (err) {
+  	console.log('close failure: ' + err);
+  	process.exit();
+  }
+
+  console.log("success");
+  process.exit();
 });
