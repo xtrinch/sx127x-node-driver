@@ -1,6 +1,6 @@
 # sx127x-node-driver
 
-Based on [node-sx127x](https://github.com/xtrinch/node-sx127x). Node.js driver for [Semtech SX1276/77/78/79](http://www.semtech.com/apps/product.php?pn=SX1276) based LoRa radios.
+Based on [node-sx127x](https://github.com/sandeepmistry/node-sx127x). Node.js driver for [Semtech SX1276/77/78/79](http://www.semtech.com/apps/product.php?pn=SX1276) based LoRa radios.
 
 Requires a **Linux** computer with SPI hardware, like a Raspberry Pi.
 
