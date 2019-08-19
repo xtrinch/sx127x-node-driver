@@ -14,9 +14,7 @@ var sx127x = new SX127x({
   tempCompensationFactor: 10,
 });
 
-async function send() {
-	let count = 0;
-	
+async function receiveSingle() {
 	try {
 		await sx127x.open();
 	} catch(err) {
@@ -24,19 +22,29 @@ async function send() {
 	}
 
 	while(true) {
-		// send a message every second
 		try {
-			await sx127x.write(new Buffer('hello ' + count++));
-			console.log("successfully sent")
+			let packetLength = await sx127x.receiveSingle();
+			if (packetLength > 0) {
+				console.log("plen:" + packetLength);
+
+				let incoming = "";
+
+				while (await sx127x.available()) {
+					incoming += String.fromCharCode(await sx127x.read());
+				}
+
+				console.log("incoming: " + incoming.toString());
+			}
+
 		} catch (err) {
 			console.log(err);
-		} 
+		}
 
-		await util.promisify(setTimeout)(1000);
+		await util.promisify(setTimeout)(200);
 	}
 }
 
-send();
+receiveSingle();
 
 process.on('SIGINT', function() {
   // close the device
