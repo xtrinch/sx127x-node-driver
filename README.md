@@ -93,7 +93,8 @@ try {
   console.log('close failure: ' + err);
   process.exit();
 }
-});```
+});
+```
 
 ### Sending data
 
