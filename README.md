@@ -75,7 +75,7 @@ Open and configure the device:
 try {
   await sx127x.open();
 } catch(err) {
-  console.log(err)
+  console.log('Failure to open device: ' + err)
 }
 ```
 
@@ -87,7 +87,7 @@ Close the device:
 try {
   await sx127x.close();
 } catch (err) {
-  console.log('close failure: ' + err);
+  console.log('Close failure: ' + err);
   process.exit();
 }
 ```
@@ -99,7 +99,7 @@ try {
   await sx127x.write(new Buffer('hello ' + count++));
   console.log("successfully sent")
 } catch (err) {
-  console.log(err);
+  console.log('Fail to send: ' + err);
 } 
 ```
 
@@ -116,7 +116,7 @@ try {
     }
   }
 } catch (err) {
-  console.log(err);
+  console.log('Fail to receive: ' + err);
 }
 ```
 
@@ -126,7 +126,7 @@ try {
    await sx127x.open();
    await sx127x.setContinuousReceiveMode();
 } catch(err) {
-   console.log(err)
+   console.log('Fail to put into continuous receive mode: ' + err)
 }
 
 sx127x.on('data', function(data, rssi, snr) {
@@ -142,19 +142,19 @@ Put the radio in sleep mode.
 try {
   await sx127x.sleep();
 } catch (err) {
-  console.log(err);
+  console.log('Fail to put into sleep mode: ' + err);
 }
 ```
 
-### Idle mode
+### Stand by mode
 
-Put the radio in idle mode.
+Put the radio in stand by mode.
 
 ```js
 try {
   await sx127x.standBy();
 } catch (err) {
-  console.log(err);
+  console.log('Fail to put into stand by: ' + err);
 }
 ```
 
