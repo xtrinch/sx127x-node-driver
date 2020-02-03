@@ -30,7 +30,7 @@ Based on [node-sx127x](https://github.com/sandeepmistry/node-sx127x), built on t
 ## Installation
 
 ```sh
-npm install sx127x-node-driver
+npm install sx127x-driver
 ```
 
 ## API
