@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/sx127x-driver.svg)](https://badge.fury.io/js/sx127x-driver)
+[![npm version](https://badge.fury.io/js/sx127x-driver.svg)](https://www.npmjs.com/package/sx127x-driver)
 [![npm](https://img.shields.io/npm/dt/sx127x-driver.svg)]()
 
 # sx127x-node-driver
