@@ -1,7 +1,7 @@
 [![npm version](https://badge.fury.io/js/sx127x-driver.svg)](https://www.npmjs.com/package/sx127x-driver)
 [![npm](https://img.shields.io/npm/dt/sx127x-driver.svg)]()
 
-# sx127x-node-driver
+# sx127x-driver
 
 Node.js driver for [Semtech SX1276/77/78/79](http://www.semtech.com/apps/product.php?pn=SX1276) based LoRa radios.
 
