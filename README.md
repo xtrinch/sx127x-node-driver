@@ -65,7 +65,7 @@ Supported options:
 | `crc` | `false` | Enable or disable CRC usage |
 | `tempCompensationFactor` | `false` | compensation factor for temperature measurements in degrees celsius (+- some degrees)
 | `debug` | `false` | enable / disable debug output
-
+| `invertIqReg` | `false` | inverts IQ register on call to open()
 
 ### Open
 
